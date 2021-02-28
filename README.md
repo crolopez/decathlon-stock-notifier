@@ -32,6 +32,8 @@ To configure the bot you have edit the `.env` file, replacing the default values
 
 Suppose we want to monitor the stock of [these trousers](https://www.decathlon.es/es/p/pantalon-jogger-ligero-fitness-corte-recto-negro/_/R-p-325948?mc=8588922&c=NEGRO) in sizes 2XL and 3XL.
 
+![imagen](https://user-images.githubusercontent.com/20266121/109428418-5ed78e00-79f7-11eb-906b-9c292c8af04c.png)
+
 This content of the `.env` file should be:
 
 ``` bash
