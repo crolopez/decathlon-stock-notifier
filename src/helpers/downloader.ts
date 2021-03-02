@@ -1,11 +1,12 @@
 import HttpClient from './HttpClient'
+import { CONFIG } from './config'
 
-async function downloadWebPage(url: string): Promise<string> {
-  console.log(`Downloading from ${url}`)
+async function downloadWebPage(): Promise<string> {
+  console.log(`Downloading from ${CONFIG.PRODUCT_URL}`)
   const time: number = new Date().getTime()
 
   const response: string = await HttpClient.get({
-    url: url,
+    url: CONFIG.PRODUCT_URL,
     headers: {
       'User-Agent': 'decathlon-stock-notifier',
       'Accept': '*/*',

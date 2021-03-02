@@ -1,5 +1,6 @@
 import TeleBot from 'telebot'
-import { registerUser, getRegisteredUsers } from './TelegramBotUsers'
+import { registerUser, getRegisteredUsers } from './telegramBotUsers'
+import { CONFIG } from './config'
 
 let bot: TeleBot
 let initDate: Date
@@ -22,9 +23,9 @@ function registerBotEvents(): void {
   })
 }
 
-function initBot(token: string): void {
-  initDate = new Date()
-  bot = new TeleBot(token)
+function initBot(): void {
+  initDate = new Date
+  bot = new TeleBot(CONFIG.TELEGRAM_BOT_TOKEN)
   registerBotEvents()
   bot.start()
 }
