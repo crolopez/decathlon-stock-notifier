@@ -29,6 +29,7 @@ To configure the bot you have edit the `.env` file, replacing the default values
 | NO_STOCK_MESSAGE | The message whose occurrence will determine that the stock is out of stock |
 | TELEGRAM_BOT_TOKEN | Token of the Telegram bot that will forward notifications |
 | TRACKING_PERIOD | Product tracking period in seconds |
+| NOTIFICATION_DELAY | Minimum notification delay in seconds |
 
 ## Use case
 
