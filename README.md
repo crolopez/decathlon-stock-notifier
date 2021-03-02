@@ -27,7 +27,8 @@ To configure the bot you have edit the `.env` file, replacing the default values
 | PRODUCT_URL | URL of the product which will be monitored |
 | DESIRED_PRODUCT_SIZES | The sizes of the product to be monitored, separated by commas |
 | NO_STOCK_MESSAGE | The message whose occurrence will determine that the stock is out of stock |
-| TELEGRAM_BOT_TOKEN | Telegram bot token that will forward notifications |
+| TELEGRAM_BOT_TOKEN | Token of the Telegram bot that will forward notifications |
+| TRACKING_PERIOD | Product tracking period in seconds |
 
 ## Use case
 
