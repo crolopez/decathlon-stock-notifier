@@ -1,3 +1,5 @@
+import { sendMessage } from './TelegramBotController'
+
 function isSizesInfo(node: object): boolean {
   const rawAttrs = (node as any).rawAttrs
   return rawAttrs != undefined &&
@@ -18,7 +20,7 @@ function notifyProductsInStock(products: ChildNode[], productsSize: string[], no
     const availability: string = Array.from(node.childNodes).filter(x => isSizesStock(x))[0].textContent?.trim() as string
 
     if (productsSize.includes(productSize) && !availability.includes(noStockMessage)) {
-      console.log(`There is stock of ${productSize}: ${availability}`)
+      sendMessage(`\nThere is stock of <i>${productSize}</i>\n<b>${availability} ✅</b>`)
     }
   })
 

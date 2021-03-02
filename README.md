@@ -27,6 +27,7 @@ To configure the bot you have edit the `.env` file, replacing the default values
 | PRODUCT_URL | URL of the product which will be monitored |
 | DESIRED_PRODUCT_SIZES | The sizes of the product to be monitored, separated by commas |
 | NO_STOCK_MESSAGE | The message whose occurrence will determine that the stock is out of stock |
+| TELEGRAM_BOT_TOKEN | Telegram bot token that will forward notifications |
 
 ## Use case
 
@@ -40,6 +41,7 @@ This content of the `.env` file should be:
 PRODUCT_URL=https://www.decathlon.es/es/p/pantalon-jogger-ligero-fitness-corte-recto-negro/_/R-p-325948?mc=8588922&c=NEGRO
 DESIRED_PRODUCT_SIZES=2XL / W38 L31,3XL / W41 L31
 NO_STOCK_MESSAGE=QUEDAN 0
+TELEGRAM_BOT_TOKEN=1098810045:AAGeOTTkj18zg9C7jr-zJkiWpiP_Uj1iJdnc
 ```
 
 ## Limitation
