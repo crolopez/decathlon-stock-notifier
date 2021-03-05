@@ -17,7 +17,11 @@ async function checkProductStock(): Promise<void> {
 
 function initCronJob(): void {
   const job = new CronJob(`*/${CONFIG.TRACKING_PERIOD} * * * * *`, function() {
-    checkProductStock()
+    try {
+      checkProductStock()
+    } catch (err) {
+      console.log(`Could not check the product. Exception: ${err}`)
+    }
   }, null, true, 'America/Los_Angeles')
   job.start()
 }
